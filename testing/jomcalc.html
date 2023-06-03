@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet">
+    <script>function insert(num){
+        document.form.textView.value=document.form.textView.value+num;
+        }
+        function equal(){
+        var exp = document.form.textView.value;
+        if(exp){
+        document.form.textView.value=eval(document.form.textView.value);
+        }
+        }
+        function c(){
+        document.form.textView.value=" ";
+        }
+        </script>
+    <div class="calculator-grid">
+
+       <div style="width: 400px; margin: 250px auto;">
+        <form name="form">
+        <input type="text" name="textView" style="width:90%; height:50px;";  readonly/>
+         <div style="display: flex;
+  flex-wrap: wrap;">
+            <input class="button" type="button" value="1" onclick="insert(1)">
+        <input class="button" type="button" value="2" onclick="insert(2)">
+        <input class="button" type="button" value="3" onclick="insert(3)">
+        <input class="button" type="button" value="4" onclick="insert(4)">
+        <input class="button" type="button" value="5" onclick="insert(5)">
+        <input class="button" type="button" value="6" onclick="insert(6)">
+        <input class="button" type="button" value="7" onclick="insert(7)">
+        <input class="button" type="button" value="8" onclick="insert(8)">
+        <input class="button" type="button" value="9" onclick="insert(9)">
+        <input class="button" type="button" value="0" onclick="insert(0)">
+
+        <br>
+        <input class="button" type="button" value="+" onclick="insert('+')"/>
+        <input class="button" type="button" value="-" onclick="insert('-')"/>
+        <input class="button" type="button" value="/" onclick="insert('/')"/>
+        <input class="button" type="button" value="x" onclick="insert('*')">
+        <input class="button" type="button" value="." onclick="insert('.')">
+        <input class="button" type="button" value="=" onclick="equal()"/>
+        <button class="button" style="width:240px;">AC</button>
+    
+    
+    </div>
+    </form>
+       </div>
+       <div class="output">
+        <div class="previous-operand"></div>
+        <div class="current-operand"></div>
+    </div>
+    </div>  
+<body>
+</body>
+</head>

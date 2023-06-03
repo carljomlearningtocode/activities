@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <script>
+        function myFunction() {
+          document.getElementById("demo").innerHTML = "Paragraph changed.";
+        }
+        function myFunction1() {
+            document.getElementById('myImage').src='dog.jpg';
+        }
+
+        function myFunction2() {
+            document.getElementById('demo1').style.fontSize='35px'
+        }
+        </script>
+        <title>Javascript Testing</title>
+</head>
+<html>
+    <body>
+        <h2>Testing</h2>
+
+        <p id="demo"> Hello World.</p>
+
+        <button type="button" onclick="myFunction()">Click Here</button>
+
+        <br>
+        <br>
+        <button onclick="myFunction1()">Turn on the light</button>
+
+<img id="myImage" style="width:100px">
+
+<p id="demo1">JavaScript can change the style of an HTML element.</p>
+
+<button type="button" onclick="myFunction2()">Click Me!</button>
+
+ 
+    </body>
+</html>
