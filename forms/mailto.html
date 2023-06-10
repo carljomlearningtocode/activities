@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html style="background-color: rgb(141, 142, 254);">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <link href="mailto.css" rel="stylesheet">
+
+    <h2 class="form123" style="text-align: center; font-weight: bold;">Contact Form</h2><br>
+
+    <p class="p123" style="text-align: center;">Let's get this conversation started. Tell us a bit about yourself, and
+        we'll get in touch as soon as we can</p>
+    <br>
+    <div class="container">
+        <form action="https://formspree.io/f/mpzegevw" method="POST">
+            <label class="fname" for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br>
+            <br>
+
+            <div class="emailfcf-form-group">
+                <label for="Email" class="emailfcf-label">Email Adress</label>
+                <div class="email fcf-input-group">
+                    <input type="email" id="Email" name="Email" class="emailfcf-form-control" required>
+                </div>
+            </div>
+            <br>
+            <div class="messagefcf-form-group">
+                <label for="Message" class="messagefcf-label">Your message</label>
+                <div class="messagefcf-input-group">
+                    <textarea id="Message" name="Message" class="mesagefcf-form-control" rows="6" maxlength="3000"
+                        required></textarea>
+                </div>
+            </div>
+            <button class="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
